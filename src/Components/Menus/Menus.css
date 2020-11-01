@@ -1,0 +1,72 @@
+.menus {
+  display: flex;
+  max-height: 43px;
+  justify-content: space-between;
+  align-items: center;
+  user-select: none;
+  user-zoom: none;
+  color: white;
+  border-bottom: 0.5px solid lightseagreen;
+}
+.menus__left {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 0 5px;
+  margin-bottom: 4px;
+}
+.menus__left > h1 {
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.menus__left > .MuiSvgIcon-root {
+  color: blue;
+  margin-left: 10px;
+  font-size: 45px;
+}
+.menus__right {
+  display: flex;
+  align-items: center;
+}
+.menus__item {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+  cursor: pointer;
+}
+.menus__item > .MuiSvgIcon-root {
+  width: 15px !important;
+}
+
+.menus__item:hover,
+.menus__left:hover {
+  background-color: var(--body-color);
+}
+.menus__item.close:hover {
+  background-color: red;
+}
+.menus__center {
+  display: flex;
+  align-items: center;
+}
+.menus__center > .MuiSvgIcon-root {
+  color: green;
+  animation: ripple 1s infinite linear;
+}
+@keyframes ripple {
+  from {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  to {
+    transform: scale(1);
+    opacity: 0.5;
+    color: orange;
+  }
+}

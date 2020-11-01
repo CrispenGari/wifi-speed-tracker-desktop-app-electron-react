@@ -1,0 +1,104 @@
+.main {
+  color: white;
+  display: flex;
+  user-select: none;
+  padding: 5px;
+}
+.main__center,
+.main__right,
+.main__left {
+  flex: 0.33;
+  background-color: white;
+  border-radius: 10px;
+  margin: 5px;
+  color: black;
+  width: 33vw;
+}
+.main__center > h1 {
+  display: flex;
+  flex-direction: column;
+}
+.main__center > h1,
+.main__right > h1,
+.main__left > h1 {
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 5px;
+  border-bottom: 0.5px solid lightseagreen;
+  max-height: 50px;
+  height: 50px;
+  margin-bottom: 5px;
+}
+.main__connectiondetails {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.main__connectiondetails > h1 {
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 5px;
+}
+.main__upload > small,
+.main__download > small {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  justify-content: space-between;
+}
+.main__upload > small > span:first-child,
+.main__download > small > span:first-child {
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.main__wificard {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  cursor: pointer;
+}
+.main__wificard:nth-child(odd) {
+  background-color: lightblue;
+}
+.main__wificard > .MuiSvgIcon-root {
+  color: lightseagreen;
+  margin-right: 5px;
+}
+.main__wificard > h2 {
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.main__messages {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  text-align: center;
+}
+.main__messages > .MuiSvgIcon-root {
+  color: lightseagreen;
+  animation: rotate infinite linear 2s;
+  font-size: 30px;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.main__messages > small {
+  color: orange;
+  letter-spacing: 2px;
+}
